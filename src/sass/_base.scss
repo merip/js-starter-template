@@ -1,0 +1,57 @@
+:root {
+  // COLOR VARIABLES
+  --color-background-1: #efefbb;
+  --color-background-2: #d4d3dd;
+  --color-pokemon-background: #FCF7DE;
+  --color-pokemon-img-background: rgba(255, 255, 255, 0.6);
+  --color-black-light: rgba(0, 0, 0, 0.1);
+  --color-grey-light-1: #f4f2f2;
+  --color-grey-light-2: #f0eeee;
+
+  // FONT VARIABLES
+  --font-primary: 'Pokemon Hollow', sans-serif;
+  --font-secondary: 'Pokemon Solid', sans-serif;
+
+  --bp-large: 78.15em; // 1250px
+  --bp-medium: 61.25em; // 980px
+  --bp-small: 37.5em; // 600px
+  --bp-smallest: 31.25em; // 500px
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+  font-family: var(--font-primary);
+  background: linear-gradient(to right bottom, var(--color-background-1), var(--color-background-2));
+  width: 100%;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.container {
+  width: 95vw;
+  max-width: 118rem;
+  margin: 0 auto;
+}
